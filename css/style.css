@@ -31,7 +31,20 @@ body {
   background-color: var(--primary-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -49,7 +62,11 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 2px solid teal;
+  outline: 1px solid tomato;
+}
+
+img {
+  display: block;
 }
 
 /* Header */
@@ -73,6 +90,10 @@ body {
 }
 
 /* Main links */
+.main-nav {
+  display: flex;
+}
+
 .main-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -98,6 +119,10 @@ body {
 }
 
 /* Contacts navigation */
+.contacts-nav {
+  display: flex;
+}
+
 .contacts-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -111,29 +136,43 @@ body {
 
 /* Hero */
 .hero {
+  text-align: center;
   background-color: var(--secondary-background-color);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--secondary-accent-color);
+
+  /* background-color: teal; */
 }
 
 .hero-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  min-width: 200px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:focus,
@@ -142,8 +181,19 @@ body {
   background-color: var(--primary-background-color);
 }
 
-/* common section features */
+/* Common section features */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding-bt {
+  padding-bottom: 0;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -151,8 +201,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* section Наши преимущества  */
-.advantages h3 {
+/* Section Our advantages  */
+.advantages .item {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -169,20 +221,23 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* section Чем мы занимаемся  */
+/* Section What we do  */
+
 .works a > img:hover,
 .works a > img:focus {
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   border-color: var(--primary-accent-color);
 }
 
-/* section Наша команда */
+/* Section Our team */
 .team {
   background-color: var(--section-background-color);
 }
 
-.team h3 {
+.team .item {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
