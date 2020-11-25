@@ -21,28 +21,30 @@
   <body>
     <!-- Header of a page -->
     <header>
-      <!-- Navigation -->
-      <div class="container">
-        <nav>
+      <div class="header container">
+        <!-- Navigation -->
+        <nav class="site-nav">
           <!-- logo -->
           <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
           <!-- Main links -->
           <ul class="main-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li class="current">
+            <li class="item current">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
         <!-- Contacnts -->
         <ul class="contacts-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -51,24 +53,24 @@
 
     <!-- Main content of a portfolio page-->
     <main>
-      <section>
+      <section class="portfolio container">
         <!-- <h1 class="portfolio-title">Примеры наших работ</h1> -->
-        <!-- Filter -->
 
+        <!-- Filter -->
         <ul class="filter list">
-          <li>
+          <li class="item">
             <button type="button" class="filter-button current">Все</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="filter-button">Веб-сайты</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="filter-button">Приложения</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="filter-button">Дизайн</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="filter-button">Маркетинг</button>
           </li>
         </ul>
@@ -83,8 +85,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <div class="card-info">
+                <h2 class="title">Технокряк</h2>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -95,8 +99,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <div class="card-info">
+                <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -107,8 +113,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
+              <div class="card-info">
+                <h2 class="title">Ресторан Seafood</h2>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -119,8 +127,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
+              <div class="card-info">
+                <h2 class="title">Проект Prime</h2>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -131,8 +141,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
+              <div class="card-info">
+                <h2 class="title">Проект Boxes</h2>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -143,8 +155,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <div class="card-info">
+                <h2 class="title">Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -155,8 +169,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
+              <div class="card-info">
+                <h2 class="title">Издание Limited Edition</h2>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -167,8 +183,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
+              <div class="card-info">
+                <h2 class="title">Проект LAB</h2>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="example-card">
@@ -179,8 +197,10 @@
                 width="370"
                 height="294"
               />
-              <h2>Growing Business</h2>
-              <p>Приложение</p>
+              <div class="card-info">
+                <h2 class="title">Growing Business</h2>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
         </ul>
@@ -189,22 +209,24 @@
 
     <!-- Footer of a page -->
     <footer class="footer">
-      <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
-      <address>
-        <ul class="list">
-          <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-contact link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="footer-contact link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+        <address>
+          <ul class="footer-info list">
+            <li class="footer-address item">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="footer-contact link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="footer-contact link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
