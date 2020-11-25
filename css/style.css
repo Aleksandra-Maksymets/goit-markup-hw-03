@@ -299,13 +299,13 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.card-info {
+.team-memeber .card-info {
   display: inline-block;
+  width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: auto;
-
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
 }
 
@@ -316,7 +316,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .team p {
@@ -450,7 +449,7 @@ img {
   margin-bottom: 0;
 }
 
-.card-info {
+.example-card .card-info {
   width: 370px;
   padding-top: 20px;
   padding-right: 24px;
