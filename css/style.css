@@ -258,11 +258,17 @@ img {
 /* Section Our advantages  */
 .advantages.container {
   display: flex;
-  justify-content: space-between;
+
+  /* outline: 1px solid red; */
 }
 
 .advantages .item {
-  width: 270px;
+  width: calc((100% - 3 * 30px) / 4);
+  /* background-color: teal; */
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages .title {
@@ -288,19 +294,27 @@ img {
 
 .images.list {
   display: flex;
-  justify-content: space-between;
 }
 
-.images img {
-  border: 2px solid transparent;
+/* .images img {
+  border: 1px solid transparent;
+} */
+
+.images > .item {
+  display: block;
+  width: calc((100% - 2 * 30px) / 3);
 }
 
-.works a > img:hover,
+.images > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .works a > img:hover,
 .works a > img:focus {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: var(--primary-accent-color);
-}
+} */
 
 /* Section Our team */
 .team {
@@ -308,7 +322,6 @@ img {
 }
 .team-memeber.list {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-memeber > .card {
@@ -317,6 +330,10 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-memeber > .card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-memeber .card-info {
